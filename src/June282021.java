@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class oneononeexercises {
+public class June282021 {
 
     public static void main(String[] args) {
         //System.out.println is Javas versions of console logging---//

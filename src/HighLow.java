@@ -1,17 +1,15 @@
 import java.util.Scanner;
 
 public class HighLow {
-
     //---void is good for actions that dont require a result to give back.-----/
-
     public static void guessingGame() {
+
         //-----Prompt user to guess the number----//
         Scanner sc = new Scanner(System.in);
         String response = "";
         System.out.println("Guess The Number");
 
         //----game picks a random number between 1 AND 100------//
-
         int winningNumber = (int) (Math.random() * (100 - 1) + 1);
         int userInput = sc.nextInt();
 
@@ -30,7 +28,7 @@ public class HighLow {
             userInput = sc.nextInt();
 
         }
-        System.out.println("GOOD GUESS!!!");
+        System.out.println("Pretty...Pretty...Pretty Good!!!");
     }
 
     String userInput = "";
