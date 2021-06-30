@@ -4,22 +4,23 @@ import java.lang.Math;
 public class MethodsExercises {
 
     public static void main(String[] args) {
-        //public static int addition(int num1, int num2)
-        System.out.println(addition(2, 8));
-        System.out.println(subtraction(5, 2));
-        System.out.println(multiplication(6, 5));
-        System.out.println(division(4, 3));
-        System.out.println(modulus(3, 6));
-        System.out.println(getInteger(4,2));
-        System.out.println(Factorial(5));
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println();
-        int userInput = getInteger(0, 10);
-        System.out.println(userInput);
-
-        System.out.println("The factorial of " + "!" + userInput + " is: " + Factorial(userInput));
-        diceRoll(scan);
+//        //public static int addition(int num1, int num2)
+//        System.out.println(addition(2, 8));
+//        System.out.println(subtraction(5, 2));
+//        System.out.println(multiplication(6, 5));
+//        System.out.println(division(4, 3));
+//        System.out.println(modulus(3, 6));
+//        System.out.println(getInteger(4,2));
+//        System.out.println(Factorial(5));
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.println();
+//        int userInput = getInteger(0, 10);
+//        System.out.println(userInput);
+//
+//        System.out.println("The factorial of " + "!" + userInput + " is: " + Factorial(userInput));
+//        diceRoll(scan);
+        HighLow.guessingGame();
 
     }
     ///------Basic Arithmetic----///
