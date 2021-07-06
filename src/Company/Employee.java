@@ -6,12 +6,17 @@ package Company;
 abstract class Employee {
     // define properties
     private String salary;
-    private String name;
+    public String nameOfEmployee;
+    public String department;
 
     // if you dont define method in abstract class, you must mark it
     // abstract
 //    public  abstract  String doWork();
 
+
+
+    // if you define the method in abstract class you must
+    // keyword is not needed
     public String doWork(){
         return "I am working";
     };
