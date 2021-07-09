@@ -7,6 +7,10 @@ public class arraywarmup {
         System.out.println(arraywarmup.toString(getIntArray()));
     }
 
+    private static Object getIntArray() {
+        return null;
+    }
+
     private static boolean toString(Object getIntArray) {
         return false;
     }

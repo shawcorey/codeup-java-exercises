@@ -6,4 +6,7 @@ public class TeamLead implements TimeSheets{
     public void fillOutTimesheets() {
         System.out.println("Team Lead is filling out Timesheets");
     }
+
+    public void firePeople() {
+    }
 }

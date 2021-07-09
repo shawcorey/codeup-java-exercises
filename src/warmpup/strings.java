@@ -1,6 +1,6 @@
-package warmpup;
-
-public class strings {
-    String[] letters = {"simple"};
-    System.out.println(letters.length);
-}
+//package warmpup;
+//
+//public class strings {
+//    String[] letters = {"simple"};
+//    System.out.println(letters.length);
+//}
