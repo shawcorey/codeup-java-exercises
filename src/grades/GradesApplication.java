@@ -2,6 +2,8 @@ package grades;
 
 import java.util.HashMap;
 
+import java.util.Scanner;
+
 public class GradesApplication {
 
     public static void main(String[] args) {
@@ -33,10 +35,27 @@ public class GradesApplication {
         usernames.put("Coding Piston", nameFour);
         System.out.println("Welcome!");
         System.out.println("Here are the Github usernames of our Students:");
-
+        // This code is printing out the usernames
         for(String key: usernames.keySet()){
             System.out.print(" |" + key + "| ");
         }
+        // Next Step is asking for user information "What student would you like to see more information on?
+        System.out.println("What student would you like to see more information on?");
+        Scanner sc = new Scanner(System.in);
+        String userInput = sc.next();
+        System.out.println(userInput);
+        //make if statement if userInput = an exsiting usernmae then ...
+
+        // if the userInput doesn't match a username, then say "hey this username doesn't exist,
+        // but if the username DOES exist, then give more info (grade and name) of that student
+        // next step is to compare userkeys to userInput
+        if (userInput == keySet) {
+
+        } else {
+
+        }
+
+
 
     }
 }
