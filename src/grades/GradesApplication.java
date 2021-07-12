@@ -1,5 +1,7 @@
 package grades;
 
+import warmpup.Input;
+
 import java.util.HashMap;
 
 import java.util.Scanner;
@@ -7,6 +9,7 @@ import java.util.Scanner;
 public class GradesApplication {
 
     public static void main(String[] args) {
+        Input input = new Input();
         HashMap<String, Student> usernames = new HashMap<>();
         //Creates students
         Student nameOne = new Student("Micheal Jordan");
@@ -36,26 +39,31 @@ public class GradesApplication {
         System.out.println("Welcome!");
         System.out.println("Here are the Github usernames of our Students:");
         // This code is printing out the usernames
-        for(String key: usernames.keySet()){
+        do {
+
+        for (String key : usernames.keySet()) {
             System.out.print(" |" + key + "| ");
         }
         // Next Step is asking for user information "What student would you like to see more information on?
-        System.out.println("What student would you like to see more information on?");
+        System.out.println("\n\n What student would you like to see more information on? \n");
         Scanner sc = new Scanner(System.in);
-        String userInput = sc.next();
-        System.out.println(userInput);
-        //make if statement if userInput = an exsiting usernmae then ...
+        String userInput = sc.nextLine();
+        Student student = usernames.get(userInput);
+        //make if statement if userInput = an existing username then ...
 
         // if the userInput doesn't match a username, then say "hey this username doesn't exist,
         // but if the username DOES exist, then give more info (grade and name) of that student
         // next step is to compare userkeys to userInput
-        if (userInput == keySet) {
+        if (student == null) {
 
+            System.out.println("\n Sorry no student found with that username of " + userInput + ".\n");
+//            System.out.println(userInput);
         } else {
+            System.out.printf("\nName: %s - GitHub Username: %s \n", student.getName(), userInput);
+            System.out.printf("\nCurrent Average: %.1f\n", student.getGradeAverage()); // get object and then get method in the student class
+
 
         }
-
-
-
-    }
+    }while (input.yesNo());
+}
 }
