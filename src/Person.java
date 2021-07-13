@@ -1,10 +1,28 @@
 public class Person {
+    //steps to define a person object
+    //Properties live outside of methods
+    private String name;
     public static void main(String[] args) {
-        // TODO: CREATE A NEW "OBERON" CLASS WITH AT LEAST 6 PROPERTIES
-//  THAT DESCRIBE OUR OBERON COHORT. MAKE SURE TO INCLUDE
-//  AT LEAST THREE DIFFERENT TYPES OF DATA IN YOUR CLASS. IN A
-//  SEPARATE FILE, CREATE 3 INSTANCES OF THE OBERON CLASS AND
-//  PRINT OUT A STRING THAT USES AT LEAST 3 OF THOSE PROPERTIES
-//  TO DESCRIBE THAT OBERON INSTANCE.
+    //Methods live under the properties *typically*
+    //You can have multiple methods i.e; getName(), setName(), sayHello().
+    //Main Method is used 90% of the time. Main Method is the starting point.
+        //Lines 10 and 11 are pulling from the person class "template,blueprint". Makes a copy.
+        Person person1 = new Person("");
+        Person person2 = new Person("Vivian");
+        person1.name = "Corey";
+
+        System.out.println(getName());
+    }
+    //These Methods can be called within the Main Method.
+    public String getName(){
+        //TODO: return the person's name
+        return
+    }
+
+    public void setName(String name){
+//TODO: change the name property to the passed value
+    }
+    public void sayHello(){
+//TODO: print a message to the console using the person's name
     }
 }
