@@ -7,12 +7,12 @@ public class Person {
     //You can have multiple methods i.e; getName(), setName(), sayHello().
     //Main Method is used 90% of the time. Main Method is the starting point.
         //Lines 10 and 11 are pulling from the person class "template,blueprint". Makes a copy.
-        Person person1 = new Person("");
-        Person person2 = new Person("Vivian");
-        person1.name = "Corey";
-        person2.name = "Vivian";
-
-        System.out.println(getName());
+//        Person person1 = new Person("");
+//        Person person2 = new Person("Vivian");
+//        person1.name = "Corey";
+//        person2.name = "Vivian";
+//
+//        System.out.println(getName());
     }
     //These Methods can be called within the Main Method.
     public String getName(){

@@ -6,7 +6,7 @@ class Red {
     }
 }
  class  Orange extends Red{
-    @Oversride// leaves comments for the compiler // it checks to see if that
+//    @Oversride// leaves comments for the compiler // it checks to see if that
     //comment is doing what it's supposed to
 
     // hey this method should be overriding the method in its parent
@@ -26,5 +26,5 @@ public class Colors {
     }
 }
 
-@Deprecated
+//@Deprecated
 //usualay above methods
