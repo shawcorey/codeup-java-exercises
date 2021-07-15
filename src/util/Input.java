@@ -34,7 +34,7 @@ public class Input {
     }
     public int getInt(){
         System.out.print("Please enter a number: ");
-        int number = scanner.nextInt();
+        int number = getString();
         return number;
     }
     public double getDouble(double min, double max){
@@ -50,7 +50,7 @@ public class Input {
     }
     public double getDouble(){
 //        System.out.print("Please enter a number with decimals: ");
-        double doubleNum = scanner.nextDouble();
+        double doubleNum = getString();
         return doubleNum;
     }
 }
