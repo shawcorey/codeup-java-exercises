@@ -10,8 +10,8 @@ public class FileIO {
     public static void main(String[] args) {
 //        System.out.println(getFilePath("fileIO","test.txt").toAbsolutePath());
         System.out.println("Does the path exist?");
-        System.out.println(getFilePath("src", "fileIO", "test.txt"));
-
+        System.out.println();
+        tryCreateDirectory(getFilePath("src", "fileIO", "file"));
 
     }
 
@@ -47,6 +47,19 @@ public class FileIO {
 //        System.out.println("The path at: " + pathToCreate.toAbsolutePath() + " already exists");
 //    }
     public static void tryCreateDirectory(Path pathToCreate) {
+
+        public static  void tryCreateFile(Path path){
+
+            if (!doesPathExist(path)){
+                try {
+                    Files.createFile(path);
+                }catch (IOException e){
+                    System.out.println("Could not create file at: " + pathToCreate.toAbsolutePath());
+                }
+            }else {
+                System.out.println("The file at: " + path.toAbsolutePath() + "already exists");
+            }
+        }
 
         if (!doesPathExist(pathToCreate)) {
 
