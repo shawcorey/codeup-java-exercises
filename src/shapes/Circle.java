@@ -30,6 +30,6 @@ public class Circle  extends GraphicObject{
 
     @Override
     void fillColor() {
-
+        System.out.println("Lets make the circle red");
     }
 }
