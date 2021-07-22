@@ -10,6 +10,10 @@ public class ConsoleExercises {
 
 
         System.out.format("The value of pi is: %f", pi);
+
+        System.out.println("Please enter a number");
     }
+
+
 
 }
