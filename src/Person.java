@@ -14,10 +14,12 @@ public class Person {
 //
 //        System.out.println(getName());
     }
+    public Person(){}
+    public Person(String name){this.name = name;}
     //These Methods can be called within the Main Method.
     public String getName(){
         //TODO: return the person's name
-        return name;
+        return this.name;
     }
 
     public void setName(String name){
