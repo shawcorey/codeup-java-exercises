@@ -1,25 +1,19 @@
-//import java.util.Random;
-//
-//public class ServerNameGenerator {
-//
-//    public static void main(String[] args) {
-//
-//        String[] tenAdjectives = {"strong, weak, fast, slow, happy, sad, smile, frown, tall, short, fat"};
-//        String[] tenNouns = {"Corey, Lee, Vivian, Teacher, Student, Athlete, Spectator, Doctor, Nurse"};
-//
-//        System.out.println("");
-//    }
-//
-//    public static void generator() {
-//
-//        int randomtenAdjectives = new Random().nextInt(tenArray.length);
-//        int randomtenNouns = new Random().nextInt(nounArray.length);
-//        return "Your server name is " + randomtenAdjectives[randomtenAdjectives] +" "+ randomtenNouns[randomtenNouns];
-//
-//    };
-//
-//
-//
-//
-//
-//}
+import java.util.Random;
+
+public class ServerNameGenerator {
+    public static void main(String[] args) {
+        String[] nouns = {"Orange", "Basketball", "Hawk", "Cake", "Seat", "Summer", "Table", "Rock", "Microphone", "Donut"};
+        String[] adjectives = {"Smooth", "Brave", "Sad", "Hysterical", "Tart", "Suave", "Grotesque", "Jagged", "Astute", "Frozen"};
+        String serverName1 = random(adjectives);
+        String serverName2 = random(nouns);
+        System.out.println("Here is your server name:");
+        System.out.println(serverName1 + "-" + serverName2);
+    }
+
+    public static String random(String[] str) {
+        Random random = new Random();
+        int randomItem = random.nextInt(str.length);
+        String randomString = str[randomItem];
+        return randomString;
+    }
+}
