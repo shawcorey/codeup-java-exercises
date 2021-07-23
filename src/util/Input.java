@@ -65,4 +65,8 @@ public class Input {
 
 
     }
+
+    public int showOptions() {
+        return 0;
+    }
 }
